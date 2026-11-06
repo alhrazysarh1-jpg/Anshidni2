@@ -1,0 +1,1202 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>انشدني\ask me</title>
+
+    <link rel="icon" type="image/png" href="anshidni-icon-transparent.png">
+    <link rel="stylesheet" href="fontawesome.min.css">
+    <link rel="stylesheet" href="leaflet.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div id="siteLoader" class="site-loader" aria-label="جاري تحميل انشدني">
+    <img src="anshidni-icon-transparent.png" alt="أيقونة انشدني Ask me">
+</div>
+
+<header class="navbar">
+
+    <div class="logo">
+        <img src="logo-anshidni-transparent.png" alt="شعار انشدني Ask me">
+        <span>انشدني\ask me</span>
+        <i class="fa-solid fa-location-dot"></i>
+    </div>
+
+    <nav>
+        <button>الرئيسية</button>
+        <button>المدن</button>
+        <button>جدولي</button>
+        <button data-page="community">آراء الناس</button>
+        <button>الخريطة</button>
+        <button data-page="dashboard">حسابي</button>
+    </nav>
+
+    <button class="profile-btn">
+        <i class="fa-solid fa-user"></i>
+    </button>
+
+</header>
+
+<main>
+
+<!-- =====================================================
+     1 - الصفحة الرئيسية
+===================================================== -->
+
+<section id="home" class="page active">
+
+    <div class="hero">
+
+        <div class="hero-content">
+
+            <h1>
+                انشدني \ ask me
+                <i class="fa-solid fa-location-dot"></i>
+            </h1>
+
+            <h2>
+                خطط رحلتك، واستمتع بكل وجهة.
+            </h2>
+
+            <div class="search-box">
+
+                <input
+                    id="homeSearch"
+                    type="text"
+                    placeholder="ابحث عن مدينة أو مكان...">
+
+                <button>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <div class="section-title">
+            <h2>اكتشف وجهاتنا</h2>
+            <p>اختر وجهتك القادمة</p>
+        </div>
+
+        <div class="city-cards">
+
+            <div class="city-card">
+
+                <img src="jeddah.jpg" alt="صورة جدة">
+
+                <h3>جدة</h3>
+
+                <p>مدينة ساحلية تجمع بين الحداثة والتراث.</p>
+
+            </div>
+
+            <div class="city-card">
+
+                <img src="kingdomCentre.jpg" alt="صورة الرياض">
+
+                <h3>الرياض</h3>
+
+                <p>عاصمة المملكة ووجهة رائعة للسياحة والترفيه.</p>
+
+            </div>
+
+            <div class="city-card">
+
+                <img src="makkah.jpg" alt="صورة مكة">
+
+                <h3>مكة</h3>
+
+                <p>وجهة روحانية وتاريخية مميزة.</p>
+
+            </div>
+
+            <div class="city-card">
+
+                <img src="madinah.jpg" alt="صورة المدينة">
+
+                <h3>المدينة</h3>
+
+                <p>مدينة التاريخ والسكينة.</p>
+
+            </div>
+
+            <div class="city-card">
+
+                <img src="abha.jpg" alt="صورة أبها">
+
+                <h3>أبها</h3>
+
+                <p>طبيعة خلابة وأجواء معتدلة.</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =====================================================
+     2 - صفحة المدن
+===================================================== -->
+
+<section id="cities" class="page">
+
+    <div class="container">
+
+        <div class="page-heading">
+
+            <h1>اكتشف السعودية</h1>
+
+            <p>
+                اختر المدينة التي ترغب في زيارتها
+            </p>
+
+        </div>
+
+        <div class="featured-cities">
+
+            <article class="large-city-card">
+
+                <img src="corniche.jpg" alt="صورة جدة">
+
+                <div>
+                    <h2>جدة</h2>
+                    <p>مدينة ساحلية تجمع بين الحداثة والتراث.</p>
+                </div>
+
+            </article>
+
+            <article class="large-city-card">
+
+                <img src="riyadh.jpg" alt="صورة الرياض">
+
+                <div>
+                    <h2>الرياض</h2>
+                    <p>عاصمة المملكة ووجهة رائعة.</p>
+                </div>
+
+            </article>
+
+            <article class="large-city-card">
+
+                <img src="makkahNight.jpg" alt="صورة مكة">
+
+                <div>
+                    <h2>مكة</h2>
+                    <p>وجهة روحانية وتاريخية.</p>
+                </div>
+
+            </article>
+
+            <article class="large-city-card">
+
+                <img src="nabawiAerial.jpg" alt="صورة المدينة">
+
+                <div>
+                    <h2>المدينة</h2>
+                    <p>مدينة التاريخ والسكينة.</p>
+                </div>
+
+            </article>
+
+            <article class="large-city-card">
+
+                <img src="abhaView.jpg" alt="صورة أبها">
+
+                <div>
+                    <h2>أبها</h2>
+                    <p>جمال الطبيعة والجبال.</p>
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =====================================================
+     3 - صفحة المدينة
+===================================================== -->
+
+<section id="city" class="page">
+
+    <div class="city-cover">
+
+        <img id="cityImage"
+             src="jeddah.jpg">
+
+        <div class="city-overlay">
+
+            <button class="back-btn">
+                <i class="fa-solid fa-arrow-right"></i>
+                المدن
+            </button>
+
+            <h1 id="cityTitle">جدة</h1>
+
+            <p id="cityDescription">
+                مدينة ساحلية تجمع بين الحداثة والتراث.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <div class="filters">
+
+            <button class="filter active">
+                الكل
+            </button>
+
+            <button class="filter">
+                مطاعم
+            </button>
+
+            <button class="filter">
+                حدائق
+            </button>
+
+            <button class="filter">
+                فعاليات
+            </button>
+
+            <button class="filter">
+                معالم
+            </button>
+
+        </div>
+
+        <div id="placesContainer" class="places-grid">
+
+            <article class="place-card"
+                     data-type="restaurant">
+
+                <img src="saleeg.jpg">
+
+                <div class="place-content">
+
+                    <span class="category">مطعم</span>
+
+                    <h3>مطعم ليڤنتي</h3>
+
+                    <div class="rating">
+                        ⭐ 4.5
+                    </div>
+
+                    <button>
+                        عرض التفاصيل
+                    </button>
+
+                </div>
+
+            </article>
+
+            <article class="place-card"
+                     data-type="park">
+
+                <img src="corniche.jpg">
+
+                <div class="place-content">
+
+                    <span class="category">حديقة</span>
+
+                    <h3>حديقة الشلال</h3>
+
+                    <div class="rating">
+                        ⭐ 4.2
+                    </div>
+
+                    <button>
+                        عرض التفاصيل
+                    </button>
+
+                </div>
+
+            </article>
+
+            <article class="place-card"
+                     data-type="event">
+
+                <img src="balad.jpg">
+
+                <div class="place-content">
+
+                    <span class="category">فعالية</span>
+
+                    <h3>مهرجان البحر الأحمر</h3>
+
+                    <div class="rating">
+                        ⭐ 4.7
+                    </div>
+
+                    <button>
+                        عرض التفاصيل
+                    </button>
+
+                </div>
+
+            </article>
+
+            <article class="place-card"
+                     data-type="landmark">
+
+                <img src="yacht.jpg">
+
+                <div class="place-content">
+
+                    <span class="category">معلم</span>
+
+                    <h3>جدة التاريخية</h3>
+
+                    <div class="rating">
+                        ⭐ 4.6
+                    </div>
+
+                    <button>
+                        عرض التفاصيل
+                    </button>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =====================================================
+     4 - تفاصيل المكان
+===================================================== -->
+
+<section id="place" class="page">
+
+    <div class="container">
+
+        <button class="back-btn dark">
+
+            <i class="fa-solid fa-arrow-right"></i>
+            العودة
+
+        </button>
+
+        <div class="place-details">
+
+            <div class="place-gallery">
+
+                <img id="placeMainImage"
+                     src="saleeg.jpg">
+
+            </div>
+
+            <div class="place-info">
+
+                <span class="category">مطعم</span>
+
+                <h1 id="placeTitle">
+                    مطعم ليڤنتي
+                </h1>
+
+                <div class="rating big">
+                    ⭐ 4.5
+                </div>
+
+                <p>
+                    مكان مميز للاستمتاع بالأجواء الجميلة
+                    والطعام اللذيذ مع إطلالة رائعة.
+                </p>
+
+                <div class="info-row">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <span>
+                        جدة، المملكة العربية السعودية
+                    </span>
+
+                </div>
+
+                <div class="info-row">
+
+                    <i class="fa-solid fa-clock"></i>
+
+                    <span>
+                        12:00 م - 2:00 ص
+                    </span>
+
+                </div>
+
+                <button class="main-btn">
+
+                    <i class="fa-solid fa-plus"></i>
+                    إضافة إلى رحلتي
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =====================================================
+     5 - الخريطة
+===================================================== -->
+
+<section id="map" class="page">
+
+    <div class="container">
+
+        <div class="page-heading">
+
+            <h1>خريطة الأماكن السياحية</h1>
+
+            <p>
+                اكتشف الأماكن القريبة منك
+            </p>
+
+        </div>
+
+        <div class="map-layout">
+
+            <aside class="map-sidebar">
+
+                <input type="text"
+                       id="mapSearch"
+                       placeholder="ابحث في الخريطة...">
+
+                <h3>التصنيفات</h3>
+
+                <button data-map-filter="restaurant">🍽️ مطاعم</button>
+
+                <button data-map-filter="park">🌳 حدائق</button>
+
+                <button data-map-filter="event">🎟️ فعاليات</button>
+
+                <button data-map-filter="all">🏛️ الكل</button>
+
+            </aside>
+
+            <div id="realMap" class="real-map" aria-label="خريطة الأماكن السياحية"></div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =====================================================
+     6 - جدول الرحلة
+===================================================== -->
+
+<section id="schedule" class="page">
+
+    <div class="container">
+
+        <div class="schedule-header">
+
+            <div>
+
+                <h1>جدول رحلتي</h1>
+
+                <p>10 - 13 أكتوبر 2026</p>
+
+            </div>
+
+            <div class="schedule-header-actions">
+                <button class="main-btn">
+                    <i class="fa-solid fa-plus"></i>
+                    إضافة نشاط جديد
+                </button>
+                <button class="secondary-btn calendar-export-btn" type="button" data-export-calendar>
+                    تحميل تقويم الجوال
+                </button>
+            </div>
+
+        </div>
+
+        <div class="schedule-layout">
+
+            <div class="activities">
+                <!-- جدول الرحلة فارغ: يضيف المستخدم أنشطته بنفسه -->
+            </div>
+
+            <div class="calendar">
+
+                <div class="calendar-head">
+
+                    <button>‹</button>
+
+                    <strong id="monthName">
+                        أكتوبر 2026
+                    </strong>
+
+                    <button>›</button>
+
+                </div>
+
+                <div class="weekdays">
+
+                    <span>أحد</span>
+                    <span>اثنين</span>
+                    <span>ثلاثاء</span>
+                    <span>أربعاء</span>
+                    <span>خميس</span>
+                    <span>جمعة</span>
+                    <span>سبت</span>
+
+                </div>
+
+                <div id="tripCalendarDays" class="calendar-days">
+
+                    <span>1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <span>5</span>
+                    <span>6</span>
+                    <span>7</span>
+                    <span>8</span>
+                    <span>9</span>
+
+                    <span class="selected">10</span>
+
+                    <span>11</span>
+                    <span>12</span>
+                    <span>13</span>
+                    <span>14</span>
+                    <span>15</span>
+                    <span>16</span>
+                    <span>17</span>
+                    <span>18</span>
+                    <span>19</span>
+                    <span>20</span>
+                    <span>21</span>
+                    <span>22</span>
+                    <span>23</span>
+                    <span>24</span>
+                    <span>25</span>
+                    <span>26</span>
+                    <span>27</span>
+                    <span>28</span>
+                    <span>29</span>
+                    <span>30</span>
+                    <span>31</span>
+
+                </div>
+
+                <button class="secondary-btn">
+
+                    إضافة إلى التقويم
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =====================================================
+     7 - إضافة نشاط
+===================================================== -->
+
+<section id="addActivity" class="page">
+
+    <div class="container small-container">
+
+        <button class="back-btn dark">
+
+            <i class="fa-solid fa-arrow-right"></i>
+            العودة إلى الجدول
+
+        </button>
+
+        <div class="form-card">
+
+            <h1>إضافة إلى رحلتي</h1>
+
+            <div class="selected-place">
+
+                <img src="balad.jpg">
+
+                <div>
+
+                    <h3>مهرجان البحر الأحمر</h3>
+
+                    <span>فعالية</span>
+
+                    <p>📍 جدة</p>
+
+                </div>
+
+            </div>
+
+            <label>
+                التاريخ
+            </label>
+
+            <input id="activityDate"
+                   type="date">
+
+            <div class="two-inputs">
+
+                <div>
+
+                    <label>
+                        وقت البداية
+                    </label>
+
+                    <input id="startTime"
+                           type="time">
+
+                </div>
+
+                <div>
+
+                    <label>
+                        وقت النهاية
+                    </label>
+
+                    <input id="endTime"
+                           type="time">
+
+                </div>
+
+            </div>
+
+            <label>
+                ملاحظات
+            </label>
+
+            <textarea
+                id="activityNotes"
+                placeholder="أضف أي ملاحظات..."></textarea>
+
+            <div class="form-buttons">
+
+                <button class="secondary-btn">
+
+                    إلغاء
+
+                </button>
+
+                <button class="main-btn">
+
+                    إضافة
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =====================================================
+     8 - نجاح إضافة النشاط
+===================================================== -->
+
+<section id="success" class="page">
+
+    <div class="success-card">
+
+        <div class="success-icon">
+            ✓
+        </div>
+
+        <h1>
+            تم إضافة النشاط إلى التقويم بنجاح!
+        </h1>
+
+        <p>
+            تمت إضافة الفعالية إلى جدول رحلتك.
+        </p>
+
+        <div>
+
+            <button class="secondary-btn">
+
+                إغلاق
+
+            </button>
+
+            <button class="main-btn">
+
+                عرض في التقويم
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =====================================================
+     9 - تسجيل الدخول
+===================================================== -->
+
+<section id="login" class="page login-page">
+
+    <div class="login-background"></div>
+
+    <div class="login-card">
+
+        <div class="login-logo">
+            <img src="logo-anshidni-transparent.png" alt="انشدني">
+            <h1 id="authTitle">مرحبًا بعودتك</h1>
+            <p id="authSubtitle">سجّل الدخول لمتابعة رحلاتك.</p>
+        </div>
+
+        <div class="auth-tabs" role="tablist">
+            <button class="auth-tab active" type="button" role="tab" data-auth-mode="login">تسجيل الدخول</button>
+            <button class="auth-tab" type="button" role="tab" data-auth-mode="register">إنشاء حساب</button>
+        </div>
+
+        <form id="loginForm" novalidate>
+            <p class="form-error" role="alert" hidden></p>
+            <label for="email">البريد الإلكتروني</label>
+            <input id="email" type="email" placeholder="example@email.com" autocomplete="email" required>
+            <label for="password">كلمة المرور</label>
+            <div class="pass-field">
+                <input id="password" type="password" placeholder="••••••••" autocomplete="current-password" required>
+                <button type="button" class="pass-toggle" data-toggle-pass="#password" aria-label="إظهار كلمة المرور"><i class="fa-regular fa-eye"></i></button>
+            </div>
+            <button class="main-btn full" type="submit">تسجيل الدخول</button>
+            <p class="register-text">ليس لديك حساب؟ <button type="button" data-auth-mode="register">إنشاء حساب</button></p>
+        </form>
+
+        <form id="registerForm" novalidate hidden>
+            <p class="form-error" role="alert" hidden></p>
+            <label for="regName">الاسم</label>
+            <input id="regName" type="text" placeholder="اسمك كما سيظهر للآخرين" autocomplete="name" required>
+            <label for="regEmail">البريد الإلكتروني</label>
+            <input id="regEmail" type="email" placeholder="example@email.com" autocomplete="email" required>
+            <label for="regPassword">كلمة المرور</label>
+            <div class="pass-field">
+                <input id="regPassword" type="password" placeholder="6 أحرف على الأقل" autocomplete="new-password" required>
+                <button type="button" class="pass-toggle" data-toggle-pass="#regPassword" aria-label="إظهار كلمة المرور"><i class="fa-regular fa-eye"></i></button>
+            </div>
+            <label for="regPassword2">تأكيد كلمة المرور</label>
+            <input id="regPassword2" type="password" placeholder="أعد كتابة كلمة المرور" autocomplete="new-password" required>
+            <button class="main-btn full" type="submit">إنشاء الحساب</button>
+            <p class="register-text">لديك حساب؟ <button type="button" data-auth-mode="login">تسجيل الدخول</button></p>
+        </form>
+
+    </div>
+
+</section>
+
+<!-- =====================================================
+     10 - حسابي: الجدول والتعليقات والذكريات
+===================================================== -->
+<section id="dashboard" class="page account-page profile-page">
+    <div class="profile-shell">
+        <div class="profile-cover" id="accountCover">
+            <span class="profile-cover-shine"></span>
+        </div>
+
+        <div class="profile-head">
+            <div class="profile-avatar-wrap">
+                <img id="accountAvatar" class="account-avatar profile-avatar" src="anshidni-icon-transparent.png" alt="الصورة الشخصية">
+            </div>
+            <div class="account-header-actions profile-actions">
+                <button class="secondary-btn" id="viewAsVisitorBtn" type="button" title="عرض ملفك كما يراه الآخرون"><i class="fa-regular fa-eye"></i> <span class="long-label">عرض ملفي كزائر</span><span class="short-label">كزائر</span></button>
+                <button class="main-btn" id="editProfileBtn" type="button"><i class="fa-solid fa-pen"></i> تعديل الملف</button>
+                <button class="secondary-btn" id="logoutBtn" type="button"><i class="fa-solid fa-arrow-right-from-bracket"></i> خروج</button>
+            </div>
+        </div>
+
+        <div class="profile-info">
+            <h1><span id="accountName">بك</span> <span id="accountPrivacyBadge" class="privacy-pill private">🔒 خاص</span></h1>
+            <p class="profile-handle" id="accountHandle">@user</p>
+            <p id="accountEmail" class="profile-email"></p>
+            <p id="accountBio" class="profile-bio"></p>
+            <div class="profile-meta">
+                <span id="accountCity"><i class="fa-solid fa-location-dot"></i> <span>السعودية</span></span>
+                <span id="accountJoined"><i class="fa-regular fa-calendar"></i> <span>انضم حديثًا</span></span>
+                <a href="#" data-social="instagram"><i class="fa-brands fa-instagram"></i> إنستغرام</a>
+                <a href="#" data-social="twitter"><i class="fa-brands fa-x-twitter"></i> إكس</a>
+            </div>
+            <div class="account-stats profile-stats">
+                <div class="account-stat"><strong id="statFollowers">0</strong><span>متابِع</span></div>
+                <div class="account-stat"><strong id="statFollowing">0</strong><span>يتابع</span></div>
+                <div class="account-stat"><strong id="statPosts">0</strong><span>منشورات</span></div>
+                <div class="account-stat"><strong id="statMemories">0</strong><span>ذكريات</span></div>
+                <div class="account-stat"><strong id="statComments">0</strong><span>تعليقات</span></div>
+                <div class="account-stat"><strong id="statActivities">0</strong><span>أنشطة في الجدول</span></div>
+            </div>
+            <div class="account-privacy privacy-switch">
+                <strong>خصوصية الحساب</strong>
+                <div class="privacy-options" role="radiogroup" aria-label="خصوصية الحساب">
+                    <label><input type="radio" name="accountPrivacy" value="عام"> <span>🌍 عام</span></label>
+                    <label><input type="radio" name="accountPrivacy" value="خاص" checked> <span>🔒 خاص</span></label>
+                </div>
+                <small id="privacyHint"></small>
+            </div>
+            <div id="followRequests" class="follow-requests" hidden></div>
+        </div>
+
+        <nav class="profile-tabs" role="tablist" aria-label="أقسام حسابي">
+            <button class="profile-tab active" type="button" role="tab" data-tab="memories">ذكرياتي</button>
+            <button class="profile-tab" type="button" role="tab" data-tab="posts">منشوراتي</button>
+            <button class="profile-tab" type="button" role="tab" data-tab="comments">تعليقاتي</button>
+            <button class="profile-tab" type="button" role="tab" data-tab="trips">جدولي</button>
+            <span class="profile-tab-indicator"></span>
+        </nav>
+
+        <div class="profile-panels">
+            <section class="account-card memories-card profile-panel active" data-panel="memories">
+                <div class="account-card-heading">
+                    <div><span class="section-label">لحظاتك الجميلة</span><h2>ذكرياتي</h2></div>
+                </div>
+                <form id="memoryForm" class="account-form">
+                    <label for="memoryTitle">عنوان الذكرى</label>
+                    <input id="memoryTitle" required placeholder="مثال: يوم جميل في جدة">
+                    <label for="memoryText">تفاصيل الذكرى</label>
+                    <textarea id="memoryText" required placeholder="اكتب تفاصيل اللحظة..."></textarea>
+                    <label for="memoryImages">صور الذكرى</label>
+                    <input id="memoryImages" type="file" accept="image/*" multiple>
+                    <small id="memoryImagesHint" class="file-hint">حتى 8 صور، وتظهر معاينتها هنا قبل الحفظ.</small>
+                    <div id="memoryPreview" class="memory-preview" aria-live="polite"></div>
+                    <fieldset class="privacy-fieldset">
+                        <legend>خصوصية الذكرى</legend>
+                        <label><input type="radio" name="memoryPrivacy" value="خاص" checked> خاصة (لي فقط)</label>
+                        <label><input type="radio" name="memoryPrivacy" value="عام"> عامة (تظهر في ملفي)</label>
+                    </fieldset>
+                    <button class="main-btn" type="submit">حفظ الذكرى</button>
+                </form>
+                <div id="memoriesList" class="saved-items memory-items"></div>
+            </section>
+
+            <section class="account-card profile-panel" data-panel="posts">
+                <div class="account-card-heading">
+                    <div><span class="section-label">آراء الناس</span><h2>منشوراتي</h2></div>
+                    <button class="text-btn" type="button" data-page="community">منشور جديد ←</button>
+                </div>
+                <div id="myPostsList" class="feed-list"></div>
+            </section>
+
+            <section class="account-card comments-card profile-panel" data-panel="comments">
+                <div class="account-card-heading">
+                    <div><span class="section-label">تجربتك</span><h2>تعليقاتي</h2></div>
+                </div>
+                <form id="commentForm" class="account-form">
+                    <label for="commentPlace">المطعم أو الفعالية أو الحديقة</label>
+                    <input id="commentPlace" required placeholder="مثال: حديقة الشلال">
+                    <div class="two-inputs">
+                        <div>
+                            <label for="commentCategory">التصنيف</label>
+                            <select id="commentCategory">
+                                <option>مطعم</option><option>فعالية</option><option>حديقة</option><option>معلم</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="commentRating">التقييم</label>
+                            <select id="commentRating">
+                                <option value="5">5 نجوم</option><option value="4">4 نجوم</option><option value="3">3 نجوم</option><option value="2">نجمتان</option><option value="1">نجمة واحدة</option>
+                            </select>
+                        </div>
+                    </div>
+                    <label for="commentText">تعليقك</label>
+                    <textarea id="commentText" required placeholder="اكتب تجربتك..."></textarea>
+                    <button class="main-btn" type="submit">حفظ التعليق</button>
+                </form>
+                <div id="commentsList" class="saved-items"></div>
+            </section>
+
+            <section class="account-card itinerary-card profile-panel" data-panel="trips">
+                <div class="account-card-heading">
+                    <div><span class="section-label">رحلتي</span><h2>بيانات جدولي</h2></div>
+                    <button class="text-btn" type="button" data-page="schedule">عرض الجدول كاملًا</button>
+                </div>
+                <div id="accountItinerary" class="account-list"></div>
+            </section>
+        </div>
+    </div>
+</section>
+
+<!-- =====================================================
+     صفحة حساب شخص آخر (عرض الزائر)
+===================================================== -->
+<section id="profileView" class="page account-page profile-page">
+    <div class="profile-shell" id="profileViewContent"></div>
+</section>
+
+<!-- =====================================================
+     آراء الناس — منصة تفاعلية
+===================================================== -->
+<section id="community" class="page community-page">
+    <div class="community-hero">
+        <div>
+            <span class="account-kicker">مجتمع انشدني</span>
+            <h1>آراء الناس</h1>
+            <p>تجارب حقيقية وصور من المطاعم والفعاليات والحدائق في مدن المملكة.</p>
+        </div>
+    </div>
+    <div class="community-layout">
+        <div class="community-main">
+            <form id="postForm" class="composer">
+                <div class="composer-top">
+                    <span id="composerAvatar" class="avatar-badge">؟</span>
+                    <textarea id="postText" required maxlength="600" placeholder="شارك تجربتك في مكان زرته..."></textarea>
+                </div>
+                <div class="composer-fields">
+                    <input id="postPlace" required placeholder="اسم المكان (مثال: البيك)">
+                    <select id="postCity" aria-label="المدينة">
+                        <option>جدة</option><option>الرياض</option><option>مكة المكرمة</option><option>المدينة المنورة</option><option>أبها</option>
+                    </select>
+                    <select id="postType" aria-label="التصنيف">
+                        <option value="restaurant">🍽️ مطعم</option><option value="event">🎟️ فعالية</option><option value="park">🌳 حديقة</option>
+                    </select>
+                </div>
+                <div class="star-rating composer-stars" id="postRating" role="radiogroup" aria-label="تقييمك">
+                    <input type="hidden" value="0">
+                    <button type="button" data-star="1" aria-label="نجمة واحدة">★</button><button type="button" data-star="2" aria-label="نجمتان">★</button><button type="button" data-star="3" aria-label="ثلاث نجوم">★</button><button type="button" data-star="4" aria-label="أربع نجوم">★</button><button type="button" data-star="5" aria-label="خمس نجوم">★</button>
+                </div>
+                <div id="postPreview" class="memory-preview"></div>
+                <div class="composer-actions">
+                    <label class="upload-btn"><i class="fa-regular fa-image"></i> صور<input id="postImages" type="file" accept="image/*" multiple hidden></label>
+                    <small id="postVisibility" class="file-hint"></small>
+                    <button class="main-btn" type="submit"><i class="fa-solid fa-paper-plane"></i> نشر</button>
+                </div>
+            </form>
+
+            <div class="feed-toolbar">
+                <div class="extra-city-filters" id="feedTypeFilters">
+                    <button class="extra-filter active" type="button" data-feed-type="all">الكل</button>
+                    <button class="extra-filter" type="button" data-feed-type="restaurant">🍽️ مطاعم</button>
+                    <button class="extra-filter" type="button" data-feed-type="event">🎟️ فعاليات</button>
+                    <button class="extra-filter" type="button" data-feed-type="park">🌳 حدائق</button>
+                </div>
+                <select id="feedCity" aria-label="تصفية حسب المدينة">
+                    <option value="all">كل المدن</option><option>جدة</option><option>الرياض</option><option>مكة المكرمة</option><option>المدينة المنورة</option><option>أبها</option>
+                </select>
+            </div>
+            <div id="feedList" class="feed-list"></div>
+        </div>
+
+        <aside class="community-side">
+            <div class="account-card">
+                <h3>حسابات مقترحة</h3>
+                <div id="demoAccounts" class="demo-accounts"></div>
+            </div>
+            <div class="account-card privacy-explainer">
+                <h3>🔒 الخصوصية في انشدني</h3>
+                <ul>
+                    <li><b>الحساب العام:</b> يمكن لأي شخص رؤية منشوراتك وذكرياتك العامة.</li>
+                    <li><b>الحساب الخاص:</b> يرى محتواك المتابعون الذين توافق عليهم فقط.</li>
+                    <li>الذكريات الخاصة تبقى لك وحدك دائمًا.</li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+</section>
+<!-- =====================================================
+     10 - عرض الجوال
+===================================================== -->
+
+<section id="mobile" class="page mobile-page">
+
+    <div class="mobile-info">
+
+        <h1>
+            رحلة
+            <i class="fa-solid fa-location-dot"></i>
+        </h1>
+
+        <h2>
+            خطط رحلتك واستمتع بكل وجهة
+        </h2>
+
+        <p>
+            تجربة سياحية سهلة وسريعة من الجوال.
+        </p>
+
+    </div>
+
+    <div class="phone">
+
+        <div class="phone-top"></div>
+
+        <div class="phone-screen">
+
+            <div class="mobile-navbar">
+
+                <strong>رحلة</strong>
+
+                <i class="fa-solid fa-location-dot"></i>
+
+            </div>
+
+            <div class="mobile-hero">
+
+                <h2>رحلة</h2>
+
+                <p>
+                    خطط رحلتك، واستمتع بكل وجهة.
+                </p>
+
+                <input
+                    placeholder="ابحث عن مدينة أو مكان">
+
+            </div>
+
+            <h3>
+                اكتشف وجهاتنا
+            </h3>
+
+            <div class="mobile-cards">
+
+                <div>
+                    <img src="jeddah.jpg">
+                    <span>جدة</span>
+                </div>
+
+                <div>
+                    <img src="riyadh.jpg">
+                    <span>الرياض</span>
+                </div>
+
+                <div>
+                    <img src="makkah.jpg">
+                    <span>مكة</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =====================================================
+     صفحات إضافية مستقلة لكل مدينة (إضافة فقط)
+===================================================== -->
+<section id="city-jeddah" class="page extra-city-page">
+  <div class="extra-city-hero">
+    <button class="extra-city-back">← العودة إلى المدن</button>
+    <div><h1>جدة</h1><p>مدينة الفن والثقافة على ساحل البحر الأحمر</p></div>
+  </div>
+  <div class="extra-city-content"><h2>اكتشف جدة</h2><div class="extra-city-filters" role="group" aria-label="تصفية الأماكن">
+    <button class="extra-filter active" type="button">الكل</button>
+    <button class="extra-filter" type="button">🍽️ مطاعم</button>
+    <button class="extra-filter" type="button">🌳 حدائق</button>
+    <button class="extra-filter" type="button">🎟️ فعاليات</button>
+  </div><div class="extra-city-grid"><!-- تُملأ تلقائيًا من script.js -->
+  </div></div>
+</section>
+
+<section id="city-riyadh" class="page extra-city-page">
+  <div class="extra-city-hero">
+    <button class="extra-city-back">← العودة إلى المدن</button>
+    <div><h1>الرياض</h1><p>عاصمة تجمع بين الحداثة والتراث والفعاليات</p></div>
+  </div>
+  <div class="extra-city-content"><h2>اكتشف الرياض</h2><div class="extra-city-filters" role="group" aria-label="تصفية الأماكن">
+    <button class="extra-filter active" type="button">الكل</button>
+    <button class="extra-filter" type="button">🍽️ مطاعم</button>
+    <button class="extra-filter" type="button">🌳 حدائق</button>
+    <button class="extra-filter" type="button">🎟️ فعاليات</button>
+  </div><div class="extra-city-grid"><!-- تُملأ تلقائيًا من script.js -->
+  </div></div>
+</section>
+
+<section id="city-makkah" class="page extra-city-page">
+  <div class="extra-city-hero">
+    <button class="extra-city-back">← العودة إلى المدن</button>
+    <div><h1>مكة المكرمة</h1><p>مدينة ذات مكانة تاريخية وروحانية عظيمة</p></div>
+  </div>
+  <div class="extra-city-content"><h2>اكتشف مكة</h2><div class="extra-city-filters" role="group" aria-label="تصفية الأماكن">
+    <button class="extra-filter active" type="button">الكل</button>
+    <button class="extra-filter" type="button">🍽️ مطاعم</button>
+    <button class="extra-filter" type="button">🌳 حدائق</button>
+    <button class="extra-filter" type="button">🎟️ فعاليات</button>
+  </div><div class="extra-city-grid"><!-- تُملأ تلقائيًا من script.js -->
+  </div></div>
+</section>
+
+<section id="city-madinah" class="page extra-city-page">
+  <div class="extra-city-hero">
+    <button class="extra-city-back">← العودة إلى المدن</button>
+    <div><h1>المدينة المنورة</h1><p>مدينة تجمع التاريخ والثقافة والتجارب الهادئة</p></div>
+  </div>
+  <div class="extra-city-content"><h2>اكتشف المدينة المنورة</h2><div class="extra-city-filters" role="group" aria-label="تصفية الأماكن">
+    <button class="extra-filter active" type="button">الكل</button>
+    <button class="extra-filter" type="button">🍽️ مطاعم</button>
+    <button class="extra-filter" type="button">🌳 حدائق</button>
+    <button class="extra-filter" type="button">🎟️ فعاليات</button>
+  </div><div class="extra-city-grid"><!-- تُملأ تلقائيًا من script.js -->
+  </div></div>
+</section>
+
+<section id="city-abha" class="page extra-city-page">
+  <div class="extra-city-hero">
+    <button class="extra-city-back">← العودة إلى المدن</button>
+    <div><h1>أبها</h1><p>طبيعة خلابة وأجواء معتدلة</p></div>
+  </div>
+  <div class="extra-city-content"><h2>اكتشف أبها</h2><div class="extra-city-filters" role="group" aria-label="تصفية الأماكن">
+    <button class="extra-filter active" type="button">الكل</button>
+    <button class="extra-filter" type="button">🍽️ مطاعم</button>
+    <button class="extra-filter" type="button">🌳 حدائق</button>
+    <button class="extra-filter" type="button">🎟️ فعاليات</button>
+  </div><div class="extra-city-grid"><!-- تُملأ تلقائيًا من script.js -->
+  </div></div>
+</section>
+
+</main>
+
+<!-- =====================================================
+     Toast / التنبيهات
+===================================================== -->
+
+<div id="toast" class="toast">
+    <i class="fa-solid fa-circle-check"></i>
+    <span id="toastMessage"></span>
+</div>
+<footer class="site-footer">
+    <div>
+        <strong>الدعم الفني</strong>
+        <p>للاستفسارات والمساعدة تواصل معنا:</p>
+    </div>
+    <div class="support-links">
+        <a class="email-link" href="mailto:anshedni.team@gmail.com?subject=%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D9%85%D9%86%20%D9%85%D9%88%D9%82%D8%B9%20%D8%A7%D9%86%D8%B4%D8%AF%D9%86%D9%8A" data-email="anshedni.team@gmail.com"><i class="fa-solid fa-envelope"></i> anshedni.team@gmail.com</a>
+        <a class="email-gmail" href="https://mail.google.com/mail/?view=cm&fs=1&to=anshedni.team@gmail.com" target="_blank" rel="noopener">الإرسال عبر Gmail</a>
+        <button class="credits-link" type="button" data-image-credits>مصادر الصور</button>
+    </div>
+</footer>
+    <script src="leaflet.js"></script>
+<script src="basemap.js"></script>
+    <script>
+        // احتياطي: لا تبقى شاشة التحميل فوق الصفحة حتى لو تأخر تحميل ملف JavaScript.
+        window.setTimeout(function () {
+            var loader = document.getElementById('siteLoader');
+            if (loader) loader.classList.add('hidden');
+        }, 1800);
+    </script>
+    <script src="script.js" defer></script>
+</body>
+</html>
